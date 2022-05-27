@@ -58,9 +58,11 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - https://www.google.com/url?sa=i&url=https%3A%2F%2Fplugins.jetbrains.com%2Fplugin%2F10044-atom-material-icons&psig=AOvVaw0bFC_rzdap2EqFFQ5rePUM&ust=1653749384272000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMiIlNr2__cCFQAAAAAdAAAAABAU
+    - https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.notion.vip%2Ficons%2F&psig=AOvVaw0bFC_rzdap2EqFFQ5rePUM&ust=1653749384272000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMiIlNr2__cCFQAAAAAdAAAAABAP
+    - https://www.google.com/url?sa=i&url=https%3A%2F%2Fall-free-download.com%2Ffree-icon%2Fdll-icons.html&psig=AOvVaw0bFC_rzdap2EqFFQ5rePUM&ust=1653749384272000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMiIlNr2__cCFQAAAAAdAAAAABAJ
+    - https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ACircle-icons-gamecontroller.svg&psig=AOvVaw0bFC_rzdap2EqFFQ5rePUM&ust=1653749384272000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMiIlNr2__cCFQAAAAAdAAAAABAD
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

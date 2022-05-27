@@ -30,8 +30,13 @@ class Home extends StatelessWidget {
     return Container(
       width: sizeX,
       height: sizeY,
-      child: ListView(
-        children: showContacts(),
+      child: GridView.count(
+        scrollDirection: Axis.vertical,
+        crossAxisCount: 2,
+        children: createGallery(50),
+        mainAxisSpacing: 5.0,
+        crossAxisSpacing: 5.0,
+        padding: EdgeInsets.all(5),
       ),
       // child: ListView.separated(
       //   itemBuilder:((context, index) => createSquare(index)),
@@ -182,6 +187,32 @@ class Home extends StatelessWidget {
       ));
      });
      return list;
+  }
+
+  List<Widget> createGallery(int numImages){
+    List<Widget> images =[];
+    List<String> urls =[];
+    urls.add('https://bit.ly/gvcar_1');
+    urls.add('https://bit.ly/gvcar_2');
+    urls.add('https://bit.ly/gvcar_3');
+    urls.add('https://bit.ly/gvcar_4');
+    urls.add('https://bit.ly/gvcar_5');
+    Widget image;
+    int i = 0;
+    while(i<numImages){
+      image = Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: NetworkImage(urls[i%5]),
+          )
+        ),
+        // child: Image.network(urls[i%5]),
+      );
+      images.add(image);
+      i++;
+    }
+    return images;
   }
 }
 
